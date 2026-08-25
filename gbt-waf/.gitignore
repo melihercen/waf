@@ -1,0 +1,18 @@
+# Secrets
+.env
+
+# TLS certificates / private keys
+nginx/certs/
+*.key
+*.crt
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs / databases
+*.log
+*.db
+
+# Node test backend varsa
+node_modules/
