@@ -105,27 +105,3 @@ Client → Nginx → WAF → Backend
                     │
                     └── Saldırı → Log + Block
 ```
-
-## Güvenlik
-
-`.env`, private key, sertifika ve log veritabanlarını GitHub'a göndermeyin.
-
-```gitignore
-.env
-nginx/certs/
-*.key
-*.crt
-*.db
-*.log
-__pycache__/
-```
-
-Production ortamında gerçek TLS sertifikası ve güçlü secret değerleri kullanılmalıdır.
-
-## Roadmap
-
-- Monitor / Block modu
-- Rule yönetimi
-- Dashboard geliştirmeleri
-- False-positive yönetimi
-- CI/CD
